@@ -1,6 +1,10 @@
 /* Main and top style tags */
 body {
+    color: white;
     margin: 0;
+}
+main {
+    padding: 0;
 }
 main h2 {
     color: #854441;
@@ -22,25 +26,33 @@ figcaption {
     font-family: "Quattrocento", serif;
 }
 
+/* Autograder only */
+article, aside {
+    padding: 0;
+}
+cite, a {
+    color: #241E1E;
+}
+
 
 /* Footer tag styles */
 footer {
     bottom: 0;
-    background-color: #854441;
+    background-color: #743C39;
     background-position: center;
     background-size: cover;
     text-align: center;
 }
 footer p, footer li, footer ul {
-    color: #F8C6C3;
+    color: #FCE5E4;
     list-style-type: none;
     padding: 0;
 }
 footer li a {
-    color: #FCE5E4;
+    color: #F6EFB7;
 }
 footer li a:hover {
-    color: #f18c88;
+    color: #FFFFFF;
 }
 footer li {
     padding: 1em 0em;

@@ -1,50 +1,48 @@
-# Mobile-first Website Project
-Put your html and css files in here.
+# My Website Project
+Put your html file/s in here. 
 
-## Goal:
-Students will develop a multi-page, mobile-first website with structured HTML and formatted content using CSS that is designed first for a hand-held width, and then adjusted through `@media` breakpoints to look more appropriate for wider widths.
+## I Recommend the Following Strategy for building a website
+I recommend you start with all the layout markup including `header`, `nav`, `article` (or `section`), and `footer` BEFORE you add the content of the site. 
 
-## Requirements
-### Folder and file structure requirements
-* The home page is named `index.html`
-* Images should be stored in the `images` (all lowercase letters)
-* Project contains at least 4 `HTML` documents
+Once you do that, then, you should configure the `nav` and create your list of links inside. In fact, I always go so far is to creating links to every page before I've even created those pages. That way, you can use that single file to create all your other pages using the "File > Save As" method and naming each file you plan to create.
 
-### HTML requirements
-* 1 or more stylesheets (a style tag can count) - but *no style attributes* in any HTML tag.
-* Each html document contains all standard HTML5 required tags (`DOCTYPE`, `html`, `head`, `title`, `body`) 
-    - ***NOTE: only one of each tag should appear in each document.***
-* Each HTML document follows semantic tags and structure employing these elements: `header`, `nav`, `main`, `section`, and `footer`
-* A `header` element (in each page) contains your title (using the `h1` tag)
-* Only 1 `main` element per page (NOTE: if you have more than one `main`, it will trigger a validation error).
-* Each page needs to include multiple sections (could be `div`, `section`, or `article`) in the main element that divides up the topic and includes some info from each section as a way to highlight the content.
-* Each page should have at least *5 paragraphs* 
-* There should be at least *three lists in all* and at least *3 list items per list* (for the entire project)
-* Each page should have at least *2 images (each in a figure tag)*.
-* Navbars should each link to the pages in your project using a relative link.
-* has no HTML errors
+## Required Elements
+### HTML Main Requirements
+* Standard HTML Tags - there should be one for each page (no more no less)
+    - `DOCTYPE`
+    - `html`
+    - `head`
+    - `title`
+* Other required tags (see minimum #)
+    - `h1` -> one per page (in the header)
+    - `header` -> one per page
+    - `nav`  -> one (could be in the header or by itself)
+    - `ul` -> at least one per page (inside the nav)
+    - `li` -> at least 4 per page (inside the ul that's in the nav)
+    - `a` -> at least 4 per page (inside each li inside the ul that's in the nav)
+    - `section` OR `article` -> at least 1 per page
+    - `h2` -> two (in the section or article)
+    - `p`  -> at least 5 per page (in the section or article and at least 1 in the footer)
+    - `footer` -> at least 1 per page
+
+### Validity Requirements
+* No HTML errors are allowed
 
 ### CSS Requirements
-* Stylesheets target a font pairing.
-* Background color and color set on the page.
-* A different color applied for headings (h1, h2, etc.)
-* Any color or background color set on an element passes the AIM color contrast checker
-    - Must pass at a AAA rating for any non-heading
-    - May pass at a AA rating for headings
-* At least two of your elements use the `flex` and/or `grid` property and related properties to contribute to the layout.
-* Any figures are styled using the `border`, `padding`, and `background-color` properties.
-* There are no `CSS` validation errors.
+* Do NOT use style attributes in your HTML - only use a style tag in the head or an external stylesheet.
+* Fonts:
+    - Apply either a font or font-pair other than Times New Roman or Comic Sans
+    - IMPORTANT NOTE ON TYPOGRAPHY AND READABILITY: 
+        + in design, the font you choose might hurt readability
+        + avoid making all paragraph text bold because it makes content difficult to read 
+        + all bold test doesn't highlight key information effectively. 
+        + Instead, use bolding sparingly for emphasis on important words or phrases, balance it with regular text, and use semantic HTML like `<strong>` for accessibility. 
 
-### Design Requirements
-Your design score is independent from the HTML or CSS tests and will be based on the video of your webpage at different widths.
-* Content must be visible and readable (with high contrast)
-* Layout is appropriate for a hand-held width including a menu-toggle button and slide-out menu
-* Layout is appropriate for a full-screen width.
-* Use of color and typography enhance readability and are consistent with the topic of the cite
-* Header should contain a background image that is consistent with the topic selected.
+* Colors:
+    - ALL COLORS must meet [WebAIM color contrast](https://webaim.org/resources/contrastchecker/) goals at the ***"WCAG AAA"*** rating
+    - Apply a **background color** to the page (through the body or html)
+    - Apply a **color** to the text (through the body or html)
+    - Apply a **color** to hyperlinks (to both the link and visited - hover is optional)
+    - Add **padding** to any of the following layout elements if present (`header`, `nav`, `main`, `article`, `aside`, `hgroup` `section`, `footer`).
 
-### Assignment Submission Requirements
-* Student must commit and push their changes to the repo (repo has the latest work)
-* Layout should not look broken at any width
-* No horizontal scrollbars should appear unless the window is more narrow that a single figure
-* Student must record their image gallery at various viewport widths (or zoom levels) - best will go towards a video showing the browser being set to different screen widths.
+NOTE: to check for errors, be sure to upload your HTML file to the [W3C File Upload Validator](https://validator.w3.org/#validate_by_upload)
