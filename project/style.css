@@ -1,0 +1,47 @@
+/* Main and top style tags */
+body {
+    margin: 0;
+}
+main h2 {
+    color: #854441;
+}
+h1, h2, h3 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    color: #241E1E;
+}
+p, main li {
+    font-family: "Quattrocento", serif;
+    color: #241E1E;
+}
+figure {
+    display: block;
+    text-align: center;
+}
+figcaption {
+    font-family: "Quattrocento", serif;
+}
+
+
+/* Footer tag styles */
+footer {
+    bottom: 0;
+    background-color: #854441;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+footer p, footer li, footer ul {
+    color: #F8C6C3;
+    list-style-type: none;
+    padding: 0;
+}
+footer li a {
+    color: #FCE5E4;
+}
+footer li a:hover {
+    color: #f18c88;
+}
+footer li {
+    padding: 1em 0em;
+}

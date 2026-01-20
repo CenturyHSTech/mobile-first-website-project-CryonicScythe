@@ -1,0 +1,38 @@
+/* Padding */
+header, section, footer {
+    padding: 1em;
+}
+
+/* Mobile first */
+nav a {
+    padding: 1em
+}
+
+
+/* Tablet and monitor display */
+@media screen and (min-width: 40em) {
+    header, section, footer {
+        padding: 1.5em;
+    }
+    main {
+        padding: 3em;
+        margin-left: 15vw;
+    }
+    section {
+        display: flex;
+        flex-direction: row;
+    }
+    figure {
+        order: 2;
+        padding-left: 10em;
+    }
+    article, aside {
+        order: 1;
+        max-width: 28vw;
+    }
+    .aside-right figure {
+        order: -1;
+        padding-left: 0em;
+        padding-right: 10em;
+    }
+}
