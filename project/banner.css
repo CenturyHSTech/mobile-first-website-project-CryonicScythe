@@ -4,11 +4,34 @@ header {
     background-size: cover;
     text-align: center;
 }
+hgroup {
+    padding: 0;
+    margin-top: 5em;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    font-size: 150%;
+    font-weight: 600;
+}
+hgroup p {
+    font-family: "Oswald", sans-serif;
+}
+
+/* Navigation bar */
+/* grid nav
+nav {
+    display: grid;
+    grid-template-columns: 5em auto 4em;
+    grid-template-rows: 2em auto;
+    grid-template-areas: 
+        "logo . menu-toggle"
+        "navbar navbar navbar";
+    padding: 0.5em;
+}
+*/
 nav {
     font-family: "Oswald", sans-serif;
     margin: 0;
-    padding: 1em;
-    width: 40%;
+    width: 100%;
     top: 0;
     position: fixed;
     transition: height 0.4s ease-in;
@@ -30,32 +53,25 @@ nav a {
     border: 1px solid #743C39;
     background-color: #f18c88;
     color: #231A1A;
+    padding: 0.5em;
 }
 nav a:hover {
     color: #FCE4E4;
     background-color: #743C39;
 }
-nav a {
-    padding: 0.5em;
+a.logo {
+    text-indent: -1000px;
+    background-image: url("images/red_logo_small.png");
+    background-repeat: no-repeat;
 }
-hgroup {
-    padding: 0;
-    margin-top: 5em;
-    font-family: "Oswald", sans-serif;
-    text-align: center;
-    font-size: 150%;
-    font-weight: 600;
-}
-hgroup p {
-    font-family: "Oswald", sans-serif;
-}
+
 
 /* navbar menu */
 a.all-menu {
     display: flex;
     flex-direction: column;
     padding: 2px;
-    margin: 2px;
+    margin: 0;
 }
 span.bar {
     display: inline-block;
@@ -94,6 +110,5 @@ nav.minimized {
     }
     a.all-menu {
         margin: 0;
-        width: 505px;
     }
 }
