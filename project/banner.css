@@ -121,11 +121,11 @@ nav.minimized {
     a.menu {
         display: none;
     }
-    ul.all-menu {
-        transform: translate(-1px, 1.5em);
+    ul.hidden {
+        transform: translateY(0);
     }
     a.logo {
-        height: 20px;
+        height: 32px;
         width: 0px;
     }
 }
