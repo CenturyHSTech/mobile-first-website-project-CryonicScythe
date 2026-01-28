@@ -17,17 +17,15 @@ hgroup p {
 }
 
 /* Navigation bar */
-/* grid nav
 nav {
     display: grid;
     grid-template-columns: 5em auto 4em;
-    grid-template-rows: 2em auto;
+    grid-template-rows: 3em auto;
     grid-template-areas: 
         "logo . menu-toggle"
         "navbar navbar navbar";
     padding: 0.5em;
 }
-*/
 nav {
     font-family: "Oswald", sans-serif;
     margin: 0;
@@ -59,27 +57,36 @@ nav a:hover {
     color: #FCE4E4;
     background-color: #743C39;
 }
+
+
+/* navbar menu */
 a.logo {
     text-indent: -1000px;
     background-image: url("images/red_logo_small.png");
     background-repeat: no-repeat;
+    grid-area: logo;
+    height: 35px;
+    width: 35px;
 }
-
-
-/* navbar menu */
-a.all-menu {
+a.menu {
     display: flex;
     flex-direction: column;
-    padding: 2px;
+    padding: 5px 10px;
     margin: 0;
+    width: 35px;
+    grid-area: menu-toggle;
 }
 span.bar {
     display: inline-block;
     width: 35px;
     height: 5px;
     background-color: #241E1E;
-    margin: 6px 0;
+    margin: 3px;
 }
+ul.main-menu {
+    grid-area: navbar;
+}
+
 
 /* hide menu */
 ul.hidden {
@@ -110,5 +117,15 @@ nav.minimized {
     }
     a.all-menu {
         margin: 0;
+    }
+    a.menu {
+        display: none;
+    }
+    ul.all-menu {
+        transform: translate(-1px, 1.5em);
+    }
+    a.logo {
+        height: 20px;
+        width: 0px;
     }
 }
